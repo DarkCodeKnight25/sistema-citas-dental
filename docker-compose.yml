@@ -1,0 +1,16 @@
+# Base de datos local para desarrollo: docker compose up -d
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: citas
+      POSTGRES_USER: citas
+      POSTGRES_PASSWORD: citas
+      TZ: America/Lima
+    ports:
+      - "5433:5432"
+    volumes:
+      - citas-datos:/var/lib/postgresql/data
+
+volumes:
+  citas-datos:

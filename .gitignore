@@ -1,0 +1,20 @@
+# Backend
+backend/target/
+*.log
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+
+# Herramientas
+.taste-skill/
+.impeccable/review/
+.impeccable/ref/
+.impeccable/live/
+.impeccable/config.local.json
+.idea/
+.vscode/
+
+# Notas internas de diseño (solo en local)
+.impeccable/
